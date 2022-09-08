@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Job Application Form PT Sukses Sejahtera</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Job Application Form PT Sukses Sejahtera</h1>
+    <p id="description">Thank you for your interest in joining us!</p>
+    <form id="survey-form">
+      <div class="form-group"><label id="name-label">Full name: <input type="text" id="name" required placeholder="eg. John Doe"/></label></div>
+      <div class="form-group"><label id="email-label">Email: <input type="email" id="email" required placeholder="example@mail.com"/></label></div>
+      <div class="form-group"><label id="number-label">Phone number: <input type="number" id="number" min="000000000000" max="999999999999" minlength="11" placeholder="eg. 089999999999" required/></label></div>
+      <div class="form-group"><label id="domicile">Domicile: <input type="text" required placeholder="eg. Bandung"/></div>
+      <div class="form-group">
+        <label for="position">What's position you wanted to join?</label>
+        <select name="position" id="dropdown" required>
+          <option disabled selected value>Select desired position</option>
+          <option value="front-end">Front-end Engineer</option>
+          <option value="back-end">Back-end Engineer</option>
+          <option value="it-support">IT Support</option>
+          <option value="data-scientist">Data Scientist</option>
+          <option value="content-creator">Content Creator</option>
+          <option value="hr-generalist">HR Generalist</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>What working model do you prefer?</p>
+        <label>
+          <input type="checkbox" name="working-model" value="full-wfo" class="inline">Full WFO
+        </label>
+        <label>
+          <input type="checkbox" name="working-model" value="full-wfa" class="inline">Full WFA
+        </label>
+        <label>
+          <input type="checkbox" name="working-model" value="hybrid" class="inline">Hybrid
+        </label>
+      </div>
+      <div class="form-group">
+        <label>Upload your latest CV: <input type="file" name="file"/></label>
+      </div>
+      <div class="form-group">
+        <label>Please tell us why we should hire you</label>
+        <textarea id="exp-desc" name="exp-desc" rows="4" cols="50" placeholder="Describe your self here ..."></textarea>
+      </div>
+    <div class="form-group">
+      <p>Do you have any referral?</p>
+      <label><input type="radio" name="referral" value="yes" checked class="inline"/>Yes</label>
+      <label><input type="radio" name="referral" value="no" class="inline"/>No</label>
+    </div>
+    <div class="form-group">
+      <label id="name-referral">Referral name (if any): <input type="text" id="name-referral" placeholder="eg. Jean Doe"/></label>
+    </div>
+    <div class="form-group">
+      <button type="submit" id="submit">Submit</button>
+    </div>
+    </form>
+  </body>
+  </html>
